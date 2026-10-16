@@ -27,7 +27,7 @@ console.log(id3);
 let tokindex=destinations.findIndex(dest=>dest.ville=="Tokyo");
 console.log(tokindex);
 //6
-let destAuMoins=destinations.some(dest=> dest.ville);
+let destAuMoins=destinations.some(dest=> dest.disponible===true);
 console.log(destAuMoins);
 //7
 let sup= destinations.every(dest=> dest.prix>0);
