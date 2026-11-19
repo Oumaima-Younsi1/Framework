@@ -1,17 +1,23 @@
- import Header from "./Components/Header/Header";
- import Footer from "./Components/Footer/Footer";
- import ListeDestination from "./Components/Destinations/ListeDestination.jsx";
- import "./App.css";
+
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import ListeDestination from "./Components/Destinations/ListeDestination.jsx";
+import Reservation from "./Components/Reservations/reservation.jsx";
+import "./App.css";
 
 function App() {
-  return( <div className="app">
-      <Header/>
+  return (
+    <div className="app">
+      <Header />
+
       <main>
-         <ListeDestination/>
+        <ListeDestination />
+        <Reservation />
       </main>
-      <Footer/>
-     </div>
-    );
+
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
